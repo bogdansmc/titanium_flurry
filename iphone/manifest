@@ -1,13 +1,14 @@
-version: 2.6
+version: 2.8
 description: Flurry for iOS
 author: Tommy Leung
 license: The MIT License (MIT)
 copyright: Copyright (c) 2013 by Soft Gravity
 
+architectures: armv7 arm64 i386 x86_64
 
 # these should not be edited
 name: iphoneflurry
 moduleid: sg.flurry
 guid: e3264201-9932-4282-bf70-ad7c3b1f0686
 platform: iphone
-minsdk: 3.0.2.GA
+minsdk: 3.5.0.GA

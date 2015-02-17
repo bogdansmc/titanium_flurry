@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>528952AB-811C-4570-B8C8-E888C0A8CE9E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iphoneflurry</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B8F3D65ADDE6BD3B1B53EDA77EB2948433E0971C</key>
+		<string>https://github.com/softgravity/titanium_flurry</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iphone/iphoneflurry.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B8F3D65ADDE6BD3B1B53EDA77EB2948433E0971C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/softgravity/titanium_flurry</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B8F3D65ADDE6BD3B1B53EDA77EB2948433E0971C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B8F3D65ADDE6BD3B1B53EDA77EB2948433E0971C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>titanium_flurry</string>
+		</dict>
+	</array>
+</dict>
+</plist>
