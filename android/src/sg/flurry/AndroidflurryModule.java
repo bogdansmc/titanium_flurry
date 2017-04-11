@@ -13,9 +13,8 @@ import java.util.HashMap;
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
-
-import org.appcelerator.titanium.TiContext;
-import org.appcelerator.titanium.util.Log;
+import org.appcelerator.titanium.TiApplication;
+import org.appcelerator.kroll.common.Log;
 //import org.appcelerator.titanium.util.TiConfig;
 
 import com.flurry.android.*;
@@ -32,26 +31,26 @@ public class AndroidflurryModule extends KrollModule
 	@Kroll.constant public static final byte MALE = Constants.MALE;
   	@Kroll.constant public static final byte FEMALE = Constants.FEMALE;
     
-    private final TiContext _tiContext;
     
-	public AndroidflurryModule(TiContext tiContext) {
-		super(tiContext);
-		_tiContext = tiContext;
+	public AndroidflurryModule() {
+		super();
 	}
 
 	// ********* Sessions *************
     // apiKey is the unique key when for the application on flurry
     @Kroll.method
     public void onStartSession(String apiKey){
-        FlurryAgent.onStartSession(_tiContext.getAndroidContext() , apiKey);
-		Log.d(LCAT, "start context: " + _tiContext.getAndroidContext());
+		TiApplication _tiContext = TiApplication.getInstance();
+        FlurryAgent.onStartSession(_tiContext.getApplicationContext() , apiKey);
+		Log.d(LCAT, "start context: " + _tiContext.getApplicationContext());
     }
     
     //Must be called if you want events to be sent
   	@Kroll.method
     public void onEndSession(){      
-        FlurryAgent.onEndSession(_tiContext.getAndroidContext());
-   		Log.d(LCAT, "end context: " + _tiContext.getAndroidContext());
+  		TiApplication _tiContext = TiApplication.getInstance();
+        FlurryAgent.onEndSession(_tiContext.getApplicationContext());
+   		Log.d(LCAT, "end context: " + _tiContext.getApplicationContext());
     }
 	// ********* Sessions *************
     
